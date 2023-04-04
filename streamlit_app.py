@@ -1,6 +1,7 @@
 import streamlit as st
 
 import av
+from streamlit_javascript import st_javascript
 
 
 import os
@@ -14,14 +15,14 @@ x.autoplay = true;
 x.load();
 alert("This is an alert dialog box");  
 """
-components.html("""<script>
-var x = document.getElementById("audio");
-x.autoplay = true;
-x.load();
-alert("This is an alert dialog box");
-</script>   
- """
-)
+#components.html("""<script>
+#var x = document.getElementById("audio");
+#x.autoplay = true;
+#x.load();
+#alert("This is an alert dialog box");
+#</script>   
+# """
+#)
 my_html = f"<script>{my_js}</script>"
 #html(my_html)
 
@@ -36,7 +37,11 @@ for titler in dir:
   diri.append(titler)
 
 
+return_value = st_javascript("""await fetch("https://reqres.in/api/products/3").then(function(response) {
+    return response.json();
+}) """)
 
+st.markdown(f"Return value was: {return_value}")
 content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
 <a href='#' id=1><img src=https://github.com/sanidhya2013kvs/images/blob/main/b2.jpg?raw=true></a>
 <a href='#' id=2><img src=https://github.com/sanidhya2013kvs/images/blob/main/b3.jpeg?raw=true></a>   """
