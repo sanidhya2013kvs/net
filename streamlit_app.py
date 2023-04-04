@@ -10,7 +10,7 @@ from streamlit.components.v1 import html
 
 # Define your javascript
 my_js = """
-var x = document.getElementById("myAudio");
+var x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
 """
