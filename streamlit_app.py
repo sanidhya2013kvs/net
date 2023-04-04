@@ -1,10 +1,10 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer
+
 import av
 import cv2
-import numpy as np
+
 import os
-from PIL import Image
+
 from st_click_detector import click_detector
 from streamlit.components.v1 import html
 
@@ -58,16 +58,6 @@ if clicked:
   st.sidebar.subheader(qwert)
 
 
-class VideoProcessor:
-
-    def recv(self, frame):
-      image = frame.to_ndarray(format="bgr24")
-
-
-
-
-       
-      return av.VideoFrame.from_ndarray(image, format="bgr24")
 
 # file name with extension
 #file_name = os.path.basename('/content/sample_data/Jubin Nautiyal- Mere Ghar Ram Aaye Hain.mp3')
@@ -87,15 +77,8 @@ class VideoProcessor:
 
 
    
-ctx=webrtc_streamer(
-      key="example",
-      video_processor_factory=VideoProcessor,
-      rtc_configuration={  
-          "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
 
-              })
-audio_file = open('/content/sample_data/Untitled Folder 1/Jubin Nautiyal- Mere Ghar Ram Aaye Hain.mp3', 'rb')
-audio_bytes = audio_file.read()
+
 
 html_string = """
             <audio controls autoplay>
@@ -104,4 +87,4 @@ html_string = """
             """
 
 
-st.markdown(html_string, unsafe_allow_html=True)
+#st.markdown(html_string, unsafe_allow_html=True)
