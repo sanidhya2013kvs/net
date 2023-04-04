@@ -37,7 +37,7 @@ for titler in dir:
   diri.append(titler)
 
 
-return_value = st_javascript("""var x = document.getElementById("audio");
+return_value = st_javascript(""" var x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
 alert("This is an alert dialog box");  
