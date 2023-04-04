@@ -10,7 +10,7 @@ from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
 my_js = """
-var x = document.getElementById("audio");
+x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
 alert("This is an alert dialog box");  
