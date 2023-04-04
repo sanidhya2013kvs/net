@@ -31,7 +31,9 @@ diri=[]
 for titler in dir:
   diri.append(titler)
 
-
+audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
+       
+   
 return_value = st_javascript(""" var x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
@@ -58,6 +60,10 @@ if clicked:
   
 
   st.sidebar.markdown(html_string, unsafe_allow_html=True)
+  a='<audio controls autoplay><source src='
+  w=CWF
+  wet='type="audio/ogg"></audio>'
+  audio=a+w+wet
 
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
