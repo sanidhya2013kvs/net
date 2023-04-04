@@ -64,6 +64,7 @@ if clicked:
   w=CWF
   wet='type="audio/ogg"></audio>'
   audio=a+w+wet
+  st.sidebar.markdown(audio,unsafe_allow_html=True)
 
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
