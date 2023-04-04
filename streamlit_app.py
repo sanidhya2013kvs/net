@@ -16,7 +16,7 @@ x.load();
 """
 
 my_html = f"<script>{my_js}</script>"
-
+html(my_html)
 
 
 path = "./songs"
@@ -48,7 +48,7 @@ if clicked:
                <source src=CWFtype="audio/mp3">
             </audio>
             """
-  html(my_html)
+  
 
   st.sidebar.markdown(html_string, unsafe_allow_html=True)
 
