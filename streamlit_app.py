@@ -9,12 +9,7 @@ import os
 from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
-my_js = """
-x = document.getElementById("audio");
-x.autoplay = true;
-x.load();
-alert("This is an alert dialog box");  
-"""
+#
 #components.html("""<script>
 #var x = document.getElementById("audio");
 #x.autoplay = true;
@@ -58,11 +53,7 @@ if clicked:
   audio_file = open(CWF, 'rb')
   audio_bytes = audio_file.read()
   html_string = """
-            <script type="text/javascript">
-    window.onload=function(){
-      document.getElementById("audio").play();
-    }
-  </script>
+            <script type="text/javascript">document.getElementById("audio").play();</script>
             """
   
 
