@@ -58,9 +58,11 @@ if clicked:
   audio_file = open(CWF, 'rb')
   audio_bytes = audio_file.read()
   html_string = """
-            <audio controls autoplay="true">
-               <source src=CWFtype="audio/mp3">
-            </audio>
+            <script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("audio").play();
+    }
+  </script>
             """
   
 
@@ -69,7 +71,7 @@ if clicked:
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   st.sidebar.audio(audio_bytes, format='audio/ogg')
-  st.markdown(return_value,unsafe_allow_html=True)
+  st.markdown(html_string,unsafe_allow_html=True)
   st.sidebar.subheader(qwert)
 
 
