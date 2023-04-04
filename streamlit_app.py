@@ -30,11 +30,11 @@ for titler in dir:
 audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
        
    
-r#eturn_value = st_javascript(""" var x = document.getElementById("audio");
-x.autoplay = true;
-x.load();
-alert("This is an alert dialog box");  
-}) """)
+#return_value = st_javascript(""" var x = document.getElementById("audio");
+#x.autoplay = true;
+#x.load();
+#alert("This is an alert dialog box");  
+#}) """)
 
 st.markdown('<script> var x = document.getElementById("audio"); x.autoplay = true; x.load();alert("This is an alert dialog box"); </script>'  ,unsafe_allow_html=True)
 content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
