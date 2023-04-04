@@ -10,13 +10,9 @@ from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
 #
-#components.html("""<script>
-#var x = document.getElementById("audio");
-#x.autoplay = true;
-#x.load();
-#alert("This is an alert dialog box");
-#</script>   
-# """
+html_string=''' 
+<script type="text/javascript">document.getElementById("audio").play();</script> 
+'''
 #)
 #my_html = f"<script>{my_js}</script>"
 #html(my_html)
@@ -47,6 +43,7 @@ content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/image
 clicked = click_detector(content)
   
 if clicked:
+  components.html(html_string)
   print("hello")
   print(clicked)
   i=int(clicked)
@@ -54,9 +51,9 @@ if clicked:
   CWF=os.path.join(path,list)
   audio_file = open(CWF, 'rb')
   audio_bytes = audio_file.read()
-  html_string = """
-            <script type="text/javascript">document.getElementById("audio").play();</script>
-            """
+  #html_string = """
+           # <script type="text/javascript">document.getElementById("audio").play();</script>
+          #  """
   
 
   st.sidebar.markdown(html_string, unsafe_allow_html=True)
@@ -64,7 +61,7 @@ if clicked:
   w=CWF
   wet='type="audio/ogg"></audio>'
   audio=a+w+wet
-  st.markdown(html_string,unsafe_allow_html=True)
+  #st.markdown(html_string,unsafe_allow_html=True)
 
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
