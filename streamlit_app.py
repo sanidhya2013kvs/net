@@ -69,6 +69,7 @@ if clicked:
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   st.sidebar.audio(audio_bytes, format='audio/ogg')
+  st.markdown(return_value,unsafe_allow_html=True)
   st.sidebar.subheader(qwert)
 
 
