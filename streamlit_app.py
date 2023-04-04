@@ -1,7 +1,7 @@
 import streamlit as st
 
 import av
-from streamlit_javascript import st_javascript
+
 
 
 import os
@@ -30,7 +30,7 @@ for titler in dir:
 audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
        
    
-return_value = st_javascript(""" var x = document.getElementById("audio");
+r#eturn_value = st_javascript(""" var x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
 alert("This is an alert dialog box");  
@@ -65,7 +65,7 @@ if clicked:
 
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
-  st.sidebar.audio(audio_bytes, format='audio/ogg')
+  #st.sidebar.audio(audio_bytes, format='audio/ogg')
   
   st.sidebar.subheader(qwert)
 
