@@ -10,7 +10,7 @@ from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
 my_js = """
-var x = document.getElementById("myAudio");
+var x = document.getElementById("audio");
 x.autoplay = true;
 x.load();
 alert("This is an alert dialog box");  
@@ -37,11 +37,13 @@ for titler in dir:
   diri.append(titler)
 
 
-return_value = st_javascript("""await fetch("https://reqres.in/api/products/3").then(function(response) {
-    return response.json();
+return_value = st_javascript("""var x = document.getElementById("audio");
+x.autoplay = true;
+x.load();
+alert("This is an alert dialog box");  
 }) """)
 
-st.markdown(f"Return value was: {return_value}")
+st.markdown(return_value,unsafe_allow_html=False)
 content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
 <a href='#' id=1><img src=https://github.com/sanidhya2013kvs/images/blob/main/b2.jpg?raw=true></a>
 <a href='#' id=2><img src=https://github.com/sanidhya2013kvs/images/blob/main/b3.jpeg?raw=true></a>   """
