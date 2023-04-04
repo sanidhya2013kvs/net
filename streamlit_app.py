@@ -59,24 +59,6 @@ if clicked:
 
 
 
-# file name with extension
-#file_name = os.path.basename('/content/sample_data/Jubin Nautiyal- Mere Ghar Ram Aaye Hain.mp3')
-
-# file name without extension
-#qwert=(os.path.splitext(file_name)[0])
-
-
-
-#content = """ <a href='#' id='Img1'><img src='httpanidhya2013kvs/images/blob/main/1.jpg?raw=true' 
-#></a>   """
-#clicked = click_detector(content)
-#if clicked=='Img1':
-  #st.sidebar.image("/content/sample_data/1.jpg")
-  #st.sidebar.subheader(qwert)
- # st.sidebar.audio(audio_bytes, format='audio/ogg')
-
-
-   
 
 
 
