@@ -1,7 +1,7 @@
 import streamlit as st
 
 import av
-import cv2
+
 
 import os
 
