@@ -43,7 +43,7 @@ content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/image
 clicked = click_detector(content)
   
 if clicked:
-  components.html(html_string)
+  
   print("hello")
   print(clicked)
   i=int(clicked)
@@ -69,16 +69,16 @@ if clicked:
   
   st.sidebar.subheader(qwert)
 
+  components.html(html_string)
 
 
 
 
-
-html_string = """
-            <audio controls autoplay>
+#html_string = """
+        #    <audio controls autoplay>
               
-            </audio>
-            """
+          #  </audio>
+          #  """
 
 
 #st.markdown(html_string, unsafe_allow_html=True)
