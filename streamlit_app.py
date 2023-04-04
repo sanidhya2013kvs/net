@@ -11,6 +11,7 @@ from streamlit.components.v1 import html
 # Define your javascript
 my_js = """
 var x = document.getElementById("audio").autoplay;
+alert("This is an alert dialog box");  
 """
 
 my_html = f"<script>{my_js}</script>"
