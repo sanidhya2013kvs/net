@@ -6,14 +6,22 @@ import av
 import os
 
 from st_click_detector import click_detector
-from streamlit.components.v1 import html
-
+import streamlit.components.v1 as components
 # Define your javascript
 my_js = """
-var x = document.getElementById("audio").autoplay;
+var x = document.getElementById("myAudio");
+x.autoplay = true;
+x.load();
 alert("This is an alert dialog box");  
 """
-
+components.html("""<script>
+var x = document.getElementById("audio");
+x.autoplay = true;
+x.load();
+alert("This is an alert dialog box");
+</script>   
+ """
+)
 my_html = f"<script>{my_js}</script>"
 html(my_html)
 
