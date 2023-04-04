@@ -66,8 +66,8 @@ if clicked:
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
-  
-  st.sidebar.subheader(qwert)
+  a=os.path.abspath(diri[i])
+  st.sidebar.subheader(a)
 
   components.html(html_string)
 
