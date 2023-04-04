@@ -19,7 +19,7 @@ my_html = f"<script>{my_js}</script>"
 
 
 
-path = "/content/sample_data/Untitled Folder 1"
+path = "./songs"
 
 dir = os.listdir(path)
 sort=dir.sort()
