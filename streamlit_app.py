@@ -23,7 +23,7 @@ alert("This is an alert dialog box");
 #</script>   
 # """
 #)
-my_html = f"<script>{my_js}</script>"
+#my_html = f"<script>{my_js}</script>"
 #html(my_html)
 
 
@@ -43,7 +43,7 @@ x.load();
 alert("This is an alert dialog box");  
 }) """)
 
-st.markdown(my_html,unsafe_allow_html=True)
+st.markdown('<script> var x = document.getElementById("audio"); x.autoplay = true; x.load();alert("This is an alert dialog box"); </script>'  ,unsafe_allow_html=True)
 content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
 <a href='#' id=1><img src=https://github.com/sanidhya2013kvs/images/blob/main/b2.jpg?raw=true></a>
 <a href='#' id=2><img src=https://github.com/sanidhya2013kvs/images/blob/main/b3.jpeg?raw=true></a>   """
