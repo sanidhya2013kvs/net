@@ -1,7 +1,7 @@
 av
 opencv-python
 streamlit
-streamlit_webrtc
+streamlit-webrtc
 mediapipe
 cvzone
 st_clickable_images
