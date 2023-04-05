@@ -17,7 +17,7 @@ dict=[]
 for i in content:
     dict.append(i)
 dict.sort()
-st.write(dict)
+#st.write(dict)
 
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
@@ -58,18 +58,13 @@ if clicked:
   i=int(clicked)
   list=diri[i]
   CWF=os.path.join(path,list)
-  audio_file = open(CWF, 'rb')
-  audio_bytes = audio_file.read()
-  #html_string = """
-           # <script type="text/javascript">document.getElementById("audio").play();</script>
-          #  """
-  
+  lost=dict[i]]
 
-  st.sidebar.markdown(html_string, unsafe_allow_html=True)
+  
   a='<audio controls autoplay><source src='
-  w=CWF
+  w=lost
   wet='type="audio/ogg"></audio>'
-  #audio=a+w+wet
+  string=f'{a+w+wet}'
   #st.markdown(html_string,unsafe_allow_html=True)
 
   #name=audio_file.name
@@ -81,15 +76,6 @@ if clicked:
   components.html(html_string)
   string=f'<audio id="audio" controls autoplay src="https://tinyurl.com/23jngfkz"></audio>'
   st.sidebar.markdown(string,unsafe_allow_html=True)
-  st.sidebar.audio(audio_bytes, format='audio/ogg')
-  a=os.path(audio_file.name)
-  print(a)
-
-#html_string = """
-        #    <audio controls autoplay>
-              
-          #  </audio>
-          #  """
+ 
 
 
-#st.markdown(html_string, unsafe_allow_html=True)
