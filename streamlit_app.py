@@ -45,7 +45,7 @@ audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
 #alert("This is an alert dialog box");  
 #}) """)
 
-st.markdown('<script> var x = document.getElementById("audio"); x.autoplay = true; x.load();alert("This is an alert dialog box"); </script>'  ,unsafe_allow_html=True)
+#st.markdown('<script> var x = document.getElementById("audio"); x.autoplay = true; x.load();alert("This is an alert dialog box"); </script>'  ,unsafe_allow_html=True)
 content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
 <a href='#' id=1><img src=https://github.com/sanidhya2013kvs/images/blob/main/b2.jpg?raw=true></a>
 <a href='#' id=2><img src=https://github.com/sanidhya2013kvs/images/blob/main/b3.jpeg?raw=true></a>   """
@@ -77,7 +77,7 @@ if clicked:
   components.html(html_string)
   string=f'{string}'
   with st.empty():
-    st.sidebar.markdown(string,unsafe_allow_html=True)
- 
+    my_html = f"{string}"
+    components.html(my_html)
 
 
