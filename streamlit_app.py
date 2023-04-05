@@ -59,14 +59,14 @@ if clicked:
   list=diri[i]
   CWF=os.path.join(path,list)
   lost=dict[i]
-  st.write(lost)
+  
   
   a='<audio controls autoplay><source src='
   w=lost
   wet='type="audio/ogg"></audio>'
-  string=f'{a+w+wet}'
+  string=a+w+wet
   #st.markdown(html_string,unsafe_allow_html=True)
-
+  st.write(string)
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
