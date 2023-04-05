@@ -75,7 +75,7 @@ if clicked:
   lost=dict[i]
   
   
-  a='<audio controls autoplay><source src="'
+  a='<audio  autoplay><source src="'
   w=lost
   r='"'
   wet='   type="audio/ogg"></audio>'
