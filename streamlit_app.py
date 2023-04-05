@@ -53,10 +53,10 @@ for i in range(len(dict)):
   with open('./images.txt') as fp:
     str_5=fp.readlines()[i]
     str_5=str_5[:(len(str_5)-1)]
-  str_6="></a>    "
-  final_str=str_1+str_2+str_3+str_4+str_5+str_6
-  print(final_str)
-  str_reg=str_reg+final_str
+    str_6="></a>    "
+    final_str=str_1+str_2+str_3+str_4+str_5+str_6
+    print(final_str)
+    str_reg=str_reg+final_str
 
 
 str_end='   """'
