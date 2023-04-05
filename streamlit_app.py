@@ -52,7 +52,7 @@ content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/image
 clicked = click_detector(content)
   
 if clicked:
-  st.sidebar.empty()
+  st.markdown.empty()
   print("hello")
   print(clicked)
   i=int(clicked)
