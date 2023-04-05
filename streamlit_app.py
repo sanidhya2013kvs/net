@@ -16,7 +16,9 @@ st.write(content)
 dict=[]
 for i in content:
     dict.append(i)
+dict.sort()
 st.write(dict)
+
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
 '''
