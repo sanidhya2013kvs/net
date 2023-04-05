@@ -13,7 +13,9 @@ with open('./name_songs.txt') as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 li = [x.strip() for x in content]
+li_n=li.sort
 st.write(li)
+st.write(li_n)
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
 '''
