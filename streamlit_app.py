@@ -44,7 +44,7 @@ audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
 #x.load();
 #alert("This is an alert dialog box");  
 #}) """)
-
+str_reg="  "
 for i in range(len(dict)):
   str_1="<a href='#' "
   str_2= "id="
