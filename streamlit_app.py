@@ -73,8 +73,8 @@ if clicked:
   string=f'<audio id="audio" controls autoplay></audio>'
   st.sidebar.markdown(string,unsafe_allow_html=True)
   st.sidebar.audio(audio_bytes, format='audio/ogg')
-  print(os.path.abspath(audio_file))
-
+  a=os.path.abspath(audio_file)
+  print(a)
 
 #html_string = """
         #    <audio controls autoplay>
