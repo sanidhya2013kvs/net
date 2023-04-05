@@ -52,7 +52,7 @@ content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/image
 clicked = click_detector(content)
   
 if clicked:
-  st.markdown.empty()
+  placeholder = st.empty()
   print("hello")
   print(clicked)
   i=int(clicked)
@@ -76,7 +76,7 @@ if clicked:
 
   components.html(html_string)
   string=f'{string}'
-  st.sidebar.markdown(string,unsafe_allow_html=True)
+  placeholder.sidebar.markdown(string,unsafe_allow_html=True)
  
 
 
