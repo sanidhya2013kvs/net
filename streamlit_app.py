@@ -61,10 +61,10 @@ if clicked:
   lost=dict[i]
   
   
-  a='<audio controls autoplay><source src='
+  a='<audio controls autoplay><source src="'
   w=lost
-  r="'"
-  wet=' type="audio/ogg"></audio>'
+  r='"'
+  wet='   type="audio/ogg"></audio>'
   string=a+w+r+wet
   #st.markdown(html_string,unsafe_allow_html=True)
   st.write(string)
