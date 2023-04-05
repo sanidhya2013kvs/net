@@ -61,7 +61,7 @@ for i in range(len(dict)):
 
 
 str_end='   """'
-content=str_start+str_reg+str_end
+content=str_reg
 print(content)
 clicked = click_detector(content)
   
