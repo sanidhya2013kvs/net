@@ -77,7 +77,7 @@ if clicked:
   
   a='<audio controls autoplay><source src="'
   type_tiny = pyshorteners.Shortener()
-  short_url = type_tiny.qprsu.short(dict[i])  
+  short_url = type_tiny.qpsru.short(dict[i])  
   w=short_url
   r='"'
   wet='   type="audio/ogg"></audio>'
