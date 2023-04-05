@@ -72,7 +72,7 @@ if clicked:
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
 
-  #st.sidebar.subheader(a)
+  st.sidebar.subheader(diri[i])
 
   components.html(html_string)
   string=f'{string}'
