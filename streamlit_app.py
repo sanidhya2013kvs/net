@@ -66,7 +66,7 @@ if clicked:
   wet='type="audio/ogg"></audio>'
   string=a+w+wet
   #st.markdown(html_string,unsafe_allow_html=True)
-  st.write(string)
+  #st.write(string)
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
@@ -74,7 +74,7 @@ if clicked:
   #st.sidebar.subheader(a)
 
   components.html(html_string)
-  
+  string=f'{string}'
   st.sidebar.markdown(string,unsafe_allow_html=True)
  
 
