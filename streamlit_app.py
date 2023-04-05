@@ -45,10 +45,23 @@ audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
 #alert("This is an alert dialog box");  
 #}) """)
 
-#st.markdown('<script> var x = document.getElementById("audio"); x.autoplay = true; x.load();alert("This is an alert dialog box"); </script>'  ,unsafe_allow_html=True)
-content = """ <a href='#' id=0><img src=https://github.com/sanidhya2013kvs/images/blob/main/1.jpg?raw=true></a>
-<a href='#' id=1><img src=https://github.com/sanidhya2013kvs/images/blob/main/b2.jpg?raw=true></a>
-<a href='#' id=2><img src=https://github.com/sanidhya2013kvs/images/blob/main/b3.jpeg?raw=true></a>   """
+for i in range(len(dict)):
+  str_1="<a href='#' "
+  str_2= "id="
+  str_3=str(i)
+  str_4="><img src="
+  with open('./images.txt') as fp:
+    str_5=fp.readlines()[i]
+    str_5=str_5[:(len(str_5)-1)]
+  str_6="></a>    "
+  final_str=str_1+str_2+str_3+str_4+str_5+str_6
+  print(final_str)
+  str_reg=str_reg+final_str
+
+
+str_end='   """'
+content=str_start+str_reg+str_end
+print(content)
 clicked = click_detector(content)
   
 if clicked:
