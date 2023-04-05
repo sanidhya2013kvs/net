@@ -63,10 +63,11 @@ if clicked:
   
   a='<audio controls autoplay><source src='
   w=lost
-  wet='type="audio/ogg"></audio>'
-  string=a+w+wet
+  r="'"
+  wet=' type="audio/ogg"></audio>'
+  string=a+w+r+wet
   #st.markdown(html_string,unsafe_allow_html=True)
-  #st.write(string)
+  st.write(string)
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
