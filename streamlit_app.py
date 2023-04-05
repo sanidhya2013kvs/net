@@ -77,7 +77,8 @@ if clicked:
   components.html(html_string)
   string=f'{string}'
   with st.empty():
-    my_html = f"{string}"
-    components.html(my_html)
+    with st.sidebar:
+        my_html = f"{string}"
+        components.html(my_html)
 
 
