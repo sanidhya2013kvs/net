@@ -70,7 +70,7 @@ if clicked:
   st.sidebar.subheader(a)
 
   components.html(html_string)
-
+  st.sidebar.audio(audio_bytes, format='audio/ogg')
 
 
 
