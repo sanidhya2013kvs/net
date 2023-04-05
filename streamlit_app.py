@@ -13,6 +13,10 @@ with open('./name_songs.txt') as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 st.write(content)
+dict=[]
+for i in content:
+    dict.append(i)
+st.write(dict)
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
 '''
