@@ -2,7 +2,7 @@ import streamlit as st
 
 import av
 
-
+import pyshorteners
 
 import os
 
@@ -76,7 +76,9 @@ if clicked:
   
   
   a='<audio controls autoplay><source src="'
-  w=lost
+  type_tiny = pyshorteners.Shortener()
+  short_url = type_tiny.tinyurl.short(lost)  
+  w=short_url
   r='"'
   wet='   type="audio/ogg"></audio>'
   string=a+w+r+wet
