@@ -13,7 +13,7 @@ with open('./name_songs.txt') as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 li = [x.strip() for x in content]
-print(li)
+st.write(li)
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
 '''
@@ -70,7 +70,7 @@ if clicked:
   #name=audio_file.name
   qwert=(os.path.splitext(list)[0])
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
-  a=os.path.abspath(diri[i])
+
   st.sidebar.subheader(a)
 
   components.html(html_string)
