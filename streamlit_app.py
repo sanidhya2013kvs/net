@@ -9,7 +9,11 @@ import os
 from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
-#
+with open('./name_songs.txt') as f:
+    content = f.readlines()
+# you may also want to remove whitespace characters like `\n` at the end of each line
+li = [x.strip() for x in content]
+print(li)
 html_string=''' 
 <script type="text/javascript">document.getElementById("audio").play();</script> 
 '''
