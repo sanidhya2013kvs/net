@@ -74,7 +74,7 @@ if clicked:
   st.sidebar.subheader(a)
 
   components.html(html_string)
-  string=f'<audio id="audio" controls autoplay src="https://tinyurl.com/23jngfkz"></audio>'
+  
   st.sidebar.markdown(string,unsafe_allow_html=True)
  
 
