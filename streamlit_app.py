@@ -70,6 +70,7 @@ if clicked:
   st.sidebar.subheader(a)
 
   components.html(html_string)
+  st.sidebar.markdown("<audio id="audio" controls autoplay></audio>",unsafe_allow_html=True)
   st.sidebar.audio(audio_bytes, format='audio/ogg')
 
 
