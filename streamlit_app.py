@@ -58,7 +58,7 @@ if clicked:
   i=int(clicked)
   list=diri[i]
   CWF=os.path.join(path,list)
-  lost=dict[i]]
+  lost=dict[i]
 
   
   a='<audio controls autoplay><source src='
