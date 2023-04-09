@@ -109,6 +109,8 @@ if clicked:
         my_html = f"{string}"
         my_html2=f"{strimg}"
         components.html(my_html2)
+        stringspace="<br>"                                  "</br>"
+        component.html(f"{stringspace}")
         components.html(my_html)
         
 
