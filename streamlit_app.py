@@ -85,8 +85,8 @@ if clicked:
   type_tiny = pyshorteners.Shortener()
   str_5=short_url = type_tiny.isgd.short(str_5)
   
-  str="'"+str_5+"'"
-  st.sidebar.image(str)
+  strimg="<img src='"+str_5+"'>"
+ 
   a='<audio controls autoplay><source src="'
   type_tiny = pyshorteners.Shortener()
   short_url = type_tiny.isgd.short(dict[i])  
@@ -107,6 +107,7 @@ if clicked:
   with st.empty():
     with st.sidebar:
         my_html = f"{string}"
+        my_html2=f"{strimg}"
         components.html(my_html)
-
+        components.html(my_html2)
 
