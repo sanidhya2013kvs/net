@@ -11,12 +11,18 @@ import streamlit.components.v1 as components
 # Define your javascript
 with open('./name_songs.txt') as f:
     content = f.readlines()
+with open('./images.txt') as fp:
+    strimages=fp.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 #st.write(content)
 dict=[]
+dict2=[]
 for i in content:
     dict.append(i)
 dict.sort()
+for i in strimages:
+    dict2.append(i)
+dict2.sort()
 #st.write(dict)
 
 html_string=''' 
@@ -51,15 +57,14 @@ for i in range(len(dict)):
   str_2= "id="
   str_3=str(i)
   str_4="><img src="
-  with open('./images.txt') as fp:
-    str_5=fp.readlines()[i]
-    str_5=str_5[:(len(str_5)-1)]
-    type_tiny = pyshorteners.Shortener()
-    str_5=short_url = type_tiny.isgd.short(str_5)
-    str_6="></a>    "
-    final_str=str_1+str_2+str_3+str_4+str_5+str_6
-    print(final_str)
-    str_reg=str_reg+final_str
+  str5=dict2[i]
+  str_5=str_5[:(len(str_5)-1)]
+  type_tiny = pyshorteners.Shortener()
+  str_5=short_url = type_tiny.isgd.short(str_5)
+  str_6="></a>    "
+  final_str=str_1+str_2+str_3+str_4+str_5+str_6
+  print(final_str)
+  str_reg=str_reg+final_str
 
 
 str_end='   """'
@@ -75,8 +80,13 @@ if clicked:
   list=diri[i]
   CWF=os.path.join(path,list)
   lost=dict[i]
-  
-  
+  str5=dict2[i]
+  str_5=str_5[:(len(str_5)-1)]
+  type_tiny = pyshorteners.Shortener()
+  str_5=short_url = type_tiny.isgd.short(str_5)
+  st.sidebar.image(str5)
+  str="'"+str_5+"'"
+  st.sidebar.image(str)
   a='<audio controls autoplay><source src="'
   type_tiny = pyshorteners.Shortener()
   short_url = type_tiny.isgd.short(dict[i])  
