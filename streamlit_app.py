@@ -57,7 +57,7 @@ for i in range(len(dict)):
   str_2= "id="
   str_3=str(i)
   str_4="><img src="
-  str5=dict2[i]
+  str_5=dict2[i]
   str_5=str_5[:(len(str_5)-1)]
   type_tiny = pyshorteners.Shortener()
   str_5=short_url = type_tiny.isgd.short(str_5)
@@ -80,11 +80,11 @@ if clicked:
   list=diri[i]
   CWF=os.path.join(path,list)
   lost=dict[i]
-  str5=dict2[i]
+  str_5=dict2[i]
   str_5=str_5[:(len(str_5)-1)]
   type_tiny = pyshorteners.Shortener()
   str_5=short_url = type_tiny.isgd.short(str_5)
-  st.sidebar.image(str5)
+  
   str="'"+str_5+"'"
   st.sidebar.image(str)
   a='<audio controls autoplay><source src="'
