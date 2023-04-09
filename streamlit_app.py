@@ -112,7 +112,7 @@ if clicked:
         stringspace="<br>"                                  "</br>"
         
         stringspace=f"{stringspace}"
-        component.html(stringspace)
+        components.html(stringspace)
         components.html(my_html)
         
 
