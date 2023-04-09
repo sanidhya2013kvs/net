@@ -85,7 +85,7 @@ if clicked:
   type_tiny = pyshorteners.Shortener()
   str_5=short_url = type_tiny.isgd.short(str_5)
   
-  strimg="<img src='"+str_5+"'>"
+  strimg="<img src='"+str_5+"' width=100% height=100%>"
  
   a='<audio controls autoplay><source src="'
   type_tiny = pyshorteners.Shortener()
