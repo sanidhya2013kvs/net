@@ -106,8 +106,8 @@ if clicked:
 
   st.sidebar.subheader(diri[i])
 
-  components.html(html_string)
-  string=f'{string}'
+  
+ 
   with st.empty():
     with st.sidebar:
         my_html = f"{string}"
