@@ -8,6 +8,7 @@ import os
 
 from st_click_detector import click_detector
 import streamlit.components.v1 as components
+st.set_page_config(page_title="Geet_sagar")
 # Define your javascript
 with open('./name_songs.txt') as f:
     content = f.readlines()
