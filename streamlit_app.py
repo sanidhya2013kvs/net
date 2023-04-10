@@ -5,7 +5,7 @@ import av
 import pyshorteners
 
 import os
-
+st.set_page_config(page_title="Geet_sagar")
 from st_click_detector import click_detector
 import streamlit.components.v1 as components
 # Define your javascript
